@@ -1,0 +1,22 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="secondary">{{'title.map' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-row>
+    <ion-col size="12">
+      <h1>{{'map.h1' | translate}}</h1>
+      <ion-label color="medium">{{'map.label' | translate}} </ion-label>
+      <div class="search-box">
+        <input #mapSearchField class="my-map-search-field" type="text" placeholder="{{'map.search.placeholder' | translate}}" />
+      </div>
+      
+      <google-map width="100%" [center]="initialCoordinates" [options]="mapConfigurations"></google-map>
+    </ion-col>
+  </ion-row>
+</ion-content>
