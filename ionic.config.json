@@ -1,0 +1,7 @@
+{
+  "name": "technicalInterview",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
